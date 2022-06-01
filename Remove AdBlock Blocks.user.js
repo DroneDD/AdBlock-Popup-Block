@@ -16,7 +16,10 @@ divs.forEach(function(d) {
     var s = window.getComputedStyle(d, null);
     if (s.top == "0px" && s.left == "0px" && s.bottom == "0px" && s.right == "0px" && s.position == "fixed") x = d;
 });
-document.querySelector("[style*=overflow]").style.setProperty("overflow", "scroll");
-var parent = x.parentElement;
-if (!(parent === document.body)) x.parentNode.remove();
-else x.remove();
+
+if (x){
+	document.querySelector("[style*=overflow]").style.setProperty("overflow", "scroll");
+	var parent = x.parentElement;
+	if (!(parent === document.body)) x.parentNode.remove();
+	else x.remove();
+}
