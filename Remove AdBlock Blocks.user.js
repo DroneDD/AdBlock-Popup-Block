@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove Typical Adblock Block.
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.2
 // @description  Remove all the adblock blocks that pop up and locks the scroll.
 // @author       DroneDD
 // @match         *://*/*
